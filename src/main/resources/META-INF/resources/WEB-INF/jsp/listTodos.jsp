@@ -5,6 +5,7 @@
 
     <body>
         <div>
+            Welcome ${name}! <br/>
             Your Todos are ${todos}
         </div>
     </body>
