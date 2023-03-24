@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <html>
     <head>
         <title> List Todos Page</title>
@@ -5,8 +7,29 @@
 
     <body>
         <div>
-            Welcome ${name}! <br/>
-            Your Todos are ${todos}
+            <div>Welcome ${name}!</div>
+            <hr/>
+            <h2>Your Todos are:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Description</th>
+                        <th>Target Date</th>
+                        <th>Is Done?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <c:forEach items="${todos}" var="todo">
+                        <tr>
+                            <td>${todo.id}</td>
+                            <td>${todo.description}</td>
+                            <td>${todo.targetDate}</td>
+                            <td>${todo.done}</td>
+                        </tr>
+                    </c:forEach>
+                </tbody>
+            </table>
         </div>
     </body>
 </html>
