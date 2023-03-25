@@ -2,15 +2,14 @@
 
 <html>
     <head>
-        <title> List Todos Page</title>
+        <link href="webjars/bootstrap/5.2.3/css/bootstrap.min.css" rel="stylesheet">
+        <title>List Todos Page</title>
     </head>
 
     <body>
-        <div>
-            <div>Welcome ${name}!</div>
-            <hr/>
-            <h2>Your Todos are:</h2>
-            <table>
+        <div class="container">
+            <h2>Your Todos</h2>
+            <table class="table">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -30,6 +29,10 @@
                     </c:forEach>
                 </tbody>
             </table>
+            <a href="add-todo" class="btn btn-success">Add Todo</a>
         </div>
+
+        <script src="webjars/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+        <script src="webjars/jquery/3.6.4/jquery.min.js"></script>
     </body>
 </html>

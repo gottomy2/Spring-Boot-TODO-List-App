@@ -3,7 +3,7 @@ package com.gottomy2.todolistwebapp.todo;
 import java.time.LocalDate;
 
 public class Todo {
-    private Long id;
+    private int id;
 
     private String username;
 
@@ -13,7 +13,7 @@ public class Todo {
 
     private boolean done;
 
-    public Todo(Long id, String username, String description, LocalDate targetDate, boolean done) {
+    public Todo(int id, String username, String description, LocalDate targetDate, boolean done) {
         this.id = id;
         this.username = username;
         this.description = description;
@@ -35,11 +35,11 @@ public class Todo {
                '}';
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
