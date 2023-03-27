@@ -1,5 +1,6 @@
 package com.gottomy2.todolistwebapp.todo;
 
+import com.gottomy2.todolistwebapp.todo.entities.Todo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
