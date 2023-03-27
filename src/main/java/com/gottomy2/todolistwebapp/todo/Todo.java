@@ -1,5 +1,7 @@
 package com.gottomy2.todolistwebapp.todo;
 
+import jakarta.validation.constraints.Size;
+
 import java.time.LocalDate;
 
 public class Todo {
@@ -7,6 +9,8 @@ public class Todo {
 
     private String username;
 
+    @Size(min = 10, message = "Enter at least 10 characters")
+    @Size(max = 100, message = "maximum length of description is 100 characters!")
     private String description;
 
     private LocalDate targetDate;
