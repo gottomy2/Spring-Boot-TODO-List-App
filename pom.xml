@@ -17,25 +17,41 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+		<!--Allows us to build web application-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
+		<!--Adds validation-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
+
+		<!--Provides support for .jsp files rendering -->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
+
+		<!--Allows us to import tags to JSP pages-->
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>glassfish-jstl</artifactId>
+		</dependency>
+
+		<!--Adds tables management tags to JSP-->
 		<dependency>
 			<groupId>jakarta.servlet.jsp.jstl</groupId>
 			<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
 		</dependency>
+
+		<!--Adds bootstrap tags to use-->
 		<dependency>
-			<groupId>org.eclipse.jetty</groupId>
-			<artifactId>glassfish-jstl</artifactId>
+			<groupId>org.webjars</groupId>
+			<artifactId>bootstrap-datepicker</artifactId>
+			<version>1.9.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.webjars</groupId>
@@ -47,12 +63,17 @@
 			<artifactId>jquery</artifactId>
 			<version>3.6.4</version>
 		</dependency>
+		<!--Adds bootstrap tags to use-->
+
+		<!--Allows us to reload page in realtime-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+
+		<!--Allows us to test application-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
