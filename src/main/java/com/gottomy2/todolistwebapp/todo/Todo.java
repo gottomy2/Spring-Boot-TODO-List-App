@@ -1,5 +1,6 @@
 package com.gottomy2.todolistwebapp.todo;
 
+import jakarta.validation.constraints.FutureOrPresent;
 import jakarta.validation.constraints.Size;
 
 import java.time.LocalDate;
@@ -13,6 +14,7 @@ public class Todo {
     @Size(max = 100, message = "maximum length of description is 100 characters!")
     private String description;
 
+    @FutureOrPresent(message = "Target date must be a present or future date!")
     private LocalDate targetDate;
 
     private boolean done;
