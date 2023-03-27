@@ -1,4 +1,4 @@
-package com.gottomy2.todolistwebapp.login;
+package com.gottomy2.todolistwebapp.welcome;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

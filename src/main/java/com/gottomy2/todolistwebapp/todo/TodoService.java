@@ -1,5 +1,6 @@
 package com.gottomy2.todolistwebapp.todo;
 
+import com.gottomy2.todolistwebapp.todo.entities.Todo;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;

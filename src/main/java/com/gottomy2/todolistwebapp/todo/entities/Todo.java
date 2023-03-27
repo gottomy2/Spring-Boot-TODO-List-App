@@ -1,4 +1,4 @@
-package com.gottomy2.todolistwebapp.todo;
+package com.gottomy2.todolistwebapp.todo.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
