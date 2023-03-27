@@ -29,6 +29,12 @@
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 
+		<!--Adds spring security-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
 		<!--Provides support for .jsp files rendering -->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
