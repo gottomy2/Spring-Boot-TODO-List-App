@@ -38,6 +38,7 @@ public class TodoControllerJpa {
         String username = getLoggedInUsername();
         Todo todo = new Todo(0, username, "", LocalDate.now().plusYears(1), false);
         model.addAttribute("todo", todo);
+        model.addAttribute("showDone",false);
         return "todo";
     }
 
@@ -65,6 +66,7 @@ public class TodoControllerJpa {
     public String showUpdateTodoPage(@RequestParam int id, ModelMap model) {
         Todo todo = repository.findById(id).get();
         model.addAttribute("todo", todo);
+        model.addAttribute("showDone",true);
         return "todo";
     }
 
